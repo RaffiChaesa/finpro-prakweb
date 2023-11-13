@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_GET['action'])) {
+    session_unset();
+    session_destroy();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Selamat Berwisata...</title>
+    <title>Selamat berwisata...</title>
 </head>
 
 <body>
@@ -19,9 +27,9 @@
                 dan tantangan yang telah membentuk kita.
             </p>
 
-            <button>Mulai...</button>
+            <a href="login.php"><button>Mulai...</button></a>
         </div>
-        <div>
+        <div class="picture">
             <img src="./images/secukupnya.jpg" alt="secukupnya" width="350px">
         </div>
     </section>

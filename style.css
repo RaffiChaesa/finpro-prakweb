@@ -10,7 +10,7 @@ h1 {
     color: #f4f4f4;
     font-family: 'Caveat', cursive;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 0px;
     margin-bottom: 1rem;
 }
@@ -19,23 +19,35 @@ p {
     color: #f4f4f4;
     font-family: 'Caveat', cursive;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     max-width: 35rem;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 .landing {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    padding: 7rem 10rem;
+    padding: 6rem 10rem;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
 }
 
 button {
-    display: block;
     background-color: #f4f4f4;
     border: none;
     color: #141414;
-    padding: 15px 32px;
+    padding: 5px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -44,4 +56,82 @@ button {
     font-size: 20px;
     border-radius: 4px;
     margin-top: 1rem;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem 10rem;
+}
+
+.login-left {
+    width: 35%;
+}
+
+label {
+    color: #f4f4f4;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    font-size: 16px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-indent: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.home {
+    padding: 3rem 10rem;
+}
+
+.home-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-warning {
+    margin: 5px 0px;
+}
+
+.input-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.input-image input{
+    border: none;
+    margin-bottom: 0px;
+}
+
+input[type="file"]::file-selector-button {
+    font-family: inherit;
 }
