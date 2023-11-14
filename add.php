@@ -15,7 +15,6 @@ if (isset($_POST['title'])) {
     $filedestination = './images/' . $image;
 
     if (!in_array($fileextension, ['pdf', 'img', 'jpg', 'png'])) {
-        // echo "your file must be in pdf, img, jpg, or png";
         $file = 'file';
     } else {
         if (move_uploaded_file($imagetemp, $filedestination)) {
@@ -27,14 +26,6 @@ if (isset($_POST['title'])) {
             }
         }
     }
-
-    // $query = mysqli_query($connect, "INSERT INTO wisata VALUES ('$title', '$desc', '$image')");
-
-    // if ($query) {
-    //     header("location:detail.php?title=$title");
-    // } else {
-    //     $gagal = 'gagal';
-    // }
 }
 ?>
 

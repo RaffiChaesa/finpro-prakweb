@@ -38,6 +38,7 @@ if (isset($_POST['username'])) {
                 <input type="password" name="password" id="password">
                 <button type="submit">Berwisata...</button>
             </form>
+            <button type="button">Buat akun...</button>
         </div>
         <div>
             <img src="./images/mulai.jpg" alt="mulai" width="350px">
