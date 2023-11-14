@@ -13,6 +13,9 @@ if (isset($_POST['username'])) {
         $gagal = "gagal";
     }
 }
+if (isset ($_GET ["action"])) {
+    $signup = true;
+}
 ?>
 
 <html lang="en">
@@ -38,7 +41,7 @@ if (isset($_POST['username'])) {
                 <input type="password" name="password" id="password">
                 <button type="submit">Berwisata...</button>
             </form>
-            <button type="button">Buat akun...</button>
+            <a href="login.php?action=signup"><button type="button">Buat akun...</button></a>
         </div>
         <div>
             <img src="./images/mulai.jpg" alt="mulai" width="350px">
