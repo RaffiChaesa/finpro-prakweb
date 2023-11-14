@@ -5,8 +5,16 @@ if (!isset($_SESSION['username'])) {
     header("location: login.php");
     exit();
 }
-
-$query = mysqli_query($connect, "SELECT * FROM wisata");
+if (isset($_GET["action"])) {
+    $action = $_GET["action"];
+    $title = $_GET['title'];
+    $query = mysqli_query($connect, "DELETE FROM wisata WHERE title = '$title'");
+    if ($query) {
+        header('location:home.php');
+    }
+}
+$username = $_SESSION["username"];
+$query = mysqli_query($connect, "SELECT * FROM wisata WHERE username = '$username'");
 ?>
 
 <html lang="en">
@@ -28,15 +36,15 @@ $query = mysqli_query($connect, "SELECT * FROM wisata");
         </div>
         <?php while ($row = mysqli_fetch_array($query)): ?>
             <div class="home-card">
-                <a href="detail.php?title=<?=$row['title']?>" class="card-left">
+                <a href="detail.php?title=<?= $row['title'] ?>" class="card-left">
                     <img src="./images/<?= $row['image'] ?>" alt="image" width="150px">
                     <p>
                         <?= $row['title'] ?>
                     </p>
                 </a>
                 <div>
-                    <a href="#"><button>Edit</button></a>
-                    <a href="#"><button>Delete</button></a>
+                    <a href="add.php?action=edit&title=<?= $row['title'] ?>"><button>Edit</button></a>
+                    <a href="detail.php?action=delete&title=<?= $row['title'] ?>"><button>Delete</button></a>
                 </div>
             </div>
         <?php endwhile ?>
