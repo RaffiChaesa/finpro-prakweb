@@ -11,3 +11,109 @@
     display: flex;
     align-items: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
+
+@font-face {
+    font-family: AnandaBlack;
+    src: url(../font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+
+:root {
+    --defaultFont: AnandaBlack;
+    --primaryColor: #141414;
+    --secondaryColor: #f4f4f4;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--primaryColor);
+}
+
+h1 {
+    color: var(--secondaryColor);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--secondaryColor);
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: 35rem;
+}
+
+a,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    border: 1px var(--secondaryColor);
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);    
+}
+
+button {
+    background-color: var(--secondaryColor);
+    border: none;
+    color: var(--primaryColor);
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+button:hover {
+    border: 1px var(--secondaryColor);
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+button:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    color: #f4f4f4;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    font-size: 16px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-indent: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+input[type="file"]::file-selector-button {
+    font-family: inherit;
+}
