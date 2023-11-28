@@ -1,16 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
 
-.login {
+.link {
     display: flex;
-    justify-content: space-evenly;
-    padding: 10rem 4rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.login-left {
-    width: 35%;
+.home {
+    padding: 3rem 10rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
+.home-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-top h1 {
+    margin-bottom: 2rem;
+}
+
+.home-top-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    gap: 6em;
+}
+.home-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.home-card img {
+    border-radius: 8px;
+}
+
+.home-card p {
+    font-size: 2rem;
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+}
 
 @font-face {
     font-family: AnandaBlack;
@@ -67,17 +105,18 @@ button {
     font-size: 20px;
     border-radius: 4px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 button:hover {
-    border: 1px var(--secondaryColor);
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
+    background-color: #dcdcdc;
+    color: var(--primaryColor);
 }
 
 button:active {
-    text-decoration: none;
-    color: inherit;
+    box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
+    -webkit-box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
+    -moz-box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
 }
 
 label {
