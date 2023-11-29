@@ -75,7 +75,7 @@ if (isset($_GET["action"])) {
         <?php if (!isset($edit)): ?>
             <div class="home-top">
                 <h1>Menambah wisata...</h1>
-                <a href="index.php?action=logout">
+                <a class="logoutbutton" href="index.php?action=logout">
                     <p>Log out</p>
                 </a>
             </div>

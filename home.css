@@ -4,6 +4,46 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-left: 2em;
+    border: 2px solid #f4f4f4;
+    border-radius: 1em;
+    color: #f4f4f4;
+}
+
+.link:hover {
+    border: 5px solid #dcdcdc;
+    color: #dcdcdc;
+}
+
+.link:hover img {
+    transform: scale(1.2);
+}
+
+.link:hover p {
+    font-size: 1.6em;
+}
+
+.link:active {
+    border: 2px solid #dcdcdc;
+    color: #f4f4f4;
+}
+
+.link:active img {
+    transform: scale(1);
+}
+
+.link:active p {
+    font-size: 1.5em;
+}
+
+.linktop {
+    display: flex;
+    align-items: center;
+}
+
+.linktop:hover {
+    color: #dcdcdc;
+    transform: scale(1.2);
 }
 
 .home {
@@ -25,6 +65,7 @@
     align-self: center;
     gap: 6em;
 }
+
 .home-bottom {
     display: flex;
     justify-content: space-between;
@@ -32,22 +73,72 @@
 
 .home-card {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     align-items: center;
     margin-bottom: 2rem;
+    border: 2px solid #f4f4f4;
+    border-radius: 2em;
+    padding: 1em 0em;
+    transition: border-width 0.3 ease-in-out;
+}
+
+.home-card:hover {
+    border: 5px solid #dcdcdc;
+    color: #dcdcdc;
+}
+
+.home-card:active {
+    border: 2px solid #dcdcdc;
 }
 
 .home-card img {
     border-radius: 8px;
+    transition: transform 0.3 ease-in-out;
 }
 
 .home-card p {
     font-size: 2rem;
+    padding-left: 2em;
+}
+
+#contentimage {
+    max-width: 150px;
+    max-height: 200px;
+    margin-left: 2em;
 }
 
 .card-left {
+    width: 100%;
     display: flex;
     align-items: center;
+}
+
+.card-left:hover img {
+    transform: scale(1.05);
+}
+
+.card-left:active {
+    transform: scale(1);
+}
+
+.card-left:hover p {
+    font-size: 2.2em;
+}
+
+.card-left:active p {
+    font-size: 2em;
+}
+
+.imgwrapper {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonwrapper {
+    display: flex;
+    gap: 1em;
+    padding-right: 2em;
 }
 
 @font-face {
@@ -114,9 +205,9 @@ button:hover {
 }
 
 button:active {
-    box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
-    -webkit-box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
-    -moz-box-shadow: -10px -10px 25px 0px rgba(0,0,0,0.46) inset;
+    box-shadow: -10px -10px 25px 0px rgba(0, 0, 0, 0.46) inset;
+    -webkit-box-shadow: -10px -10px 25px 0px rgba(0, 0, 0, 0.46) inset;
+    -moz-box-shadow: -10px -10px 25px 0px rgba(0, 0, 0, 0.46) inset;
 }
 
 label {
@@ -148,4 +239,14 @@ textarea:focus {
 
 input[type="file"]::file-selector-button {
     font-family: inherit;
+}
+
+.logoutbutton:hover p {
+    color: #dcdcdc;
+    font-size: 1.6em;
+}
+
+.logoutbutton:active p {
+    color: #f4f4f4;
+    font-size: 1.5em;
 }

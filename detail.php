@@ -35,12 +35,12 @@ if (isset($_GET["action"])) {
             <?php else: ?>
                 <h1>Kau hanya merindu...</h1>
             <?php endif ?>
-            <a href="index.php?action=logout">
+            <a class="logoutbutton" href="index.php?action=logout">
                 <p>Log out</p>
             </a>
         </div>
         <div class="detail-bottom">
-            <div>
+            <div class="imgwrapper">
                 <img src="./images/<?= $row['image'] ?>" alt="tambah" width="350px">
             </div>
             <div>

@@ -57,15 +57,16 @@ button {
     font-size: 20px;
     border-radius: 4px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 button:hover {
-    border: 1px var(--secondaryColor);
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
+    background-color: #dcdcdc;
+    color: var(--primaryColor);
 }
 
 button:active {
+    background-color: #f4f4f4;
     text-decoration: none;
     color: inherit;
 }
@@ -188,4 +189,14 @@ input[type="file"]::file-selector-button {
 .detail-bottom {
     display: flex;
     gap: 10rem;
+}
+
+.logoutbutton:hover p {
+    color: #dcdcdc;
+    font-size: 1.6em;
+}
+
+.logoutbutton:active p {
+    color: #f4f4f4;
+    font-size: 1.5em;
 }

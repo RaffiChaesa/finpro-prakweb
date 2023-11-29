@@ -31,8 +31,8 @@ $query = mysqli_query($connect, "SELECT * FROM wisata WHERE username = '$usernam
         <div class="home-top">
             <h1>Wisata masa lalu...</h1>
             <div class="home-top-wrapper">
-                <a class="link" href="add.php"><img src="./images/add.svg" alt="add" width="23px">
-                <a href="index.php?action=logout">
+                <a class="linktop" href="add.php"><img src="./images/add.svg" alt="add" width="23px">
+                <a class="logoutbutton" href="index.php?action=logout">
                     <p>Log out</p>
                 </a>
             </div>
@@ -41,7 +41,7 @@ $query = mysqli_query($connect, "SELECT * FROM wisata WHERE username = '$usernam
             <div class="home-card">
                 <a href="detail.php?title=<?= $row['title'] ?>" class="card-left">
                     <div class="imgwrapper">
-                        <img src="./images/<?= $row['image'] ?>" alt="image" width="150px">
+                        <img src="./images/<?= $row['image'] ?>" id="contentimage" alt="image">
                     </div>
                     <div class="titlewrapper">
                         <p>
